@@ -7,7 +7,7 @@ let section = function(){
     element.classList.add("section")
 
     element.innerHTML = `
-    <h1>Our Advantages</h1>
+    <h1 class="section__headline">Our Advantages</h1>
     `
     element.append(advSection())
     return element

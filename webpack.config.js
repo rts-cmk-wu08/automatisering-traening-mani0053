@@ -17,6 +17,9 @@ module.exports = {
         port: 3000,
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            template: 'template.html'
+        }),
         new MiniCssExtractPlugin({
             linkType: "text/css"
         })

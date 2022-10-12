@@ -10,9 +10,17 @@
 &__text{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    line-height: 24px;
 }
 &__headline{
     font-family: 'Merriweather', serif;
     font-size: 22px;
 }
+&__img{
+    margin: 2em 0;
+}
+}
+.sectionFacilities__headline{
+    font-size: 36px;
+    // margin-bottom: 2em;
 }

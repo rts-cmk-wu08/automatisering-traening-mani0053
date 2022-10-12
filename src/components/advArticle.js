@@ -4,7 +4,7 @@ let advArticle = function (advantage) {
 
   element.innerHTML = `
   <img class="adv-article__img" src="${advantage.icon}" alt="" />
-        <h1 class="adv-article__headline">${advantage.headline}</h1>
+        <h3 class="adv-article__headline">${advantage.headline}</h3>
         <p class="adv-article__text">${advantage.text}</p>
 `
 return element

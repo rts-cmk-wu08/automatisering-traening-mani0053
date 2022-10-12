@@ -1,8 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+import sectionFac from "./components/sectionFac"
+import section from "./components/section.js"
 
-    // slå dig løs her... 
 
-    //eksempel på at udskrive alle overskrifter i services i konsollen:
-    services.forEach(service => console.log(service.headline))
 
-}) // DOMContentLoaded slut
+let element = document.querySelector(".wrapper")
+element.append(sectionFac())
+element.append(section())
+console.log(element)

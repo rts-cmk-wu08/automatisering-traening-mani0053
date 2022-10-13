@@ -1,6 +1,7 @@
-import {facilities} from "../data.js"
+import {facilities} from "../../data.js"
 import facSection from "./facSection.js"
-import "./section.scss"
+import "../section.scss"
+import "./facSection.scss"
 
 let section = function(){
 

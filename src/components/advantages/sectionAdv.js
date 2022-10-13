@@ -1,5 +1,5 @@
 import advSection from "./advSection.js"
-import "./section.scss"
+import "../section.scss"
 
 let section = function(){
 

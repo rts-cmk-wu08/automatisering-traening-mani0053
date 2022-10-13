@@ -1,4 +1,4 @@
-import {facilities} from "../data.js"
+import {facilities} from "../../data.js"
 import facArticle from "./facArticle.js"
 import "./facSection.scss"
 

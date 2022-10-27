@@ -43,23 +43,29 @@ let ContactForm = function () {
 
   element.addEventListener("submit", function (e) {
     e.preventDefault();
-    // console.log(e.target.firstname.value);
-    if(e.target.firstname.value === ""){
-        console.log
-    }
-    let data = {
-        firstname: e.target.firstname.value,
-        lastname: e.target.lastname.value,
-        address: e.target.address.value,
-        postalcode: e.target.postalcode.value,
-        city: e.target.city.value,
-        email: e.target.email.value,
-        phone: e.target.phone.value,
-        message: e.target.message.value,
-    }
-    console.log(data)
 
+    let data = {
+      firstname: e.target.firstname.value,
+      lastname: e.target.lastname.value,
+      address: e.target.address.value,
+      postalcode: e.target.postalcode.value,
+      city: e.target.city.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+    };
+    fetch("http://localhost:4000/comments", {
+      method: "POST",
+      headers: {
+        "Content.type": "application/json; charset=UTF-8",
+      },
+      body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
   });
+
+
   return element;
 };
 
